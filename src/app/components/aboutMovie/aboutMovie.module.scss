@@ -1,0 +1,156 @@
+.aboutMovieCont {
+  display: flex;
+  width: 1792px;
+  height: 279px;
+  color: white;
+  //flex-direction: column;
+  justify-content: space-between;
+}
+
+.aboutMovie {
+  display: flex;
+  flex-direction: column;
+  width: 890px;
+  height: 280px;
+}
+
+.movieAttributes {
+  display: flex;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: TT Norms Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.movieDescription {
+  padding-top: 37px;
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro, serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.warning {
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.copyright {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+  padding-top: 26px;
+  color: rgb(99, 99, 101);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.ratingCont {
+  display: flex;
+  width: 630px;
+  height: 138px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.rating {
+  width: 113px;
+  height: 58px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 60px 130px 40px 40px;
+  background: linear-gradient(90.00deg, rgb(242, 244, 82), rgb(180, 253, 100));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Druk Wide Cy serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.selectRating {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.question{
+  /* Text Desktop/H4 */
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.recommendations{
+  /* Text Desktop/B4 */
+  color: rgb(186, 186, 186);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.grades{
+  display: flex;
+  padding-top: 18px;
+  /* Text Desktop/H1 */
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 10px;
+  text-align: left;
+  gap: 126px;
+}
+.activeNav::after {
+  background: linear-gradient(
+                  45deg,
+                  rgb(242, 244, 82) 0%,
+                  rgb(180, 253, 100) 64%
+  );
+  border-radius: 2px;
+  bottom: -8px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 10px;
+  width: 100%;
+}
+
+.activeNav {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+
+
+

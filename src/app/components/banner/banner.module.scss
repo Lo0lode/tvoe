@@ -1,0 +1,92 @@
+.banner {
+  display: flex;
+//   background-image: url(../../assets/images/banner.png);
+background: linear-gradient(90.00deg, rgb(9, 9, 12) 21.094%,rgba(9, 9, 12, 0)
+ 50%),linear-gradient(180.00deg, rgb(9, 9, 12),rgba(15, 15, 15, 0) 50%),
+ linear-gradient(180.00deg, rgba(9, 9, 12, 0) 50%,rgb(9, 9, 12) 92.094%) ,url(../../assets/images/banner.png);
+  height: 652px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: start;
+  flex-direction: column;
+  justify-content: end;
+  gap: 24px;
+  color: white;
+}
+.bannerNameCont {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding: 0px 64px;
+
+}
+.bannerInfo {
+  display: flex;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+  font-family: TT Norms Pro;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 100%;
+  letter-spacing: 0.1px;
+  margin-left: 20px;
+}
+.bannerInfo > span:not(:first-child)::before {
+    height: 4px;
+    width: 4px;
+    background-color: #232326;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    content: "";
+}
+.swiperCont{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 64px;
+}
+// .swiperNextBtn {
+//   background-color: rgba(0, 0, 0, 0.7);
+//   border: none;
+//   border-radius: 10px; 
+//   width: 50px;
+//   height: 80px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease;
+// }
+.swiperNextBtn::after {
+  color: black;
+  font-size: 9px
+}
+@media (max-width: 375px){
+   .banner {
+     height: 300px;
+     width: 375px;
+     background:url(../../assets/images/miniBanner.png);
+    }
+   .bannerNameCont {
+        padding: 0px 24px;
+
+    }
+   .bannerInfo {
+        font-size: 16px;
+    }
+  .avatarName{
+    height: 54px;
+    width: 176px;
+  }
+  .swiperCont{
+    padding-left: 12px;
+  }
+  .swiperImage{
+    border-radius: 10px;
+    height: 61px;
+    width: 107px;
+  }
+}

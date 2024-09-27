@@ -1,0 +1,110 @@
+.reviewsCont{
+display: flex;
+  flex-direction: column;
+  color: white;
+  width: 2035px;
+  height: 184px;
+  padding-top: 90px;
+  padding-bottom: 160px;
+}
+.headingReviewsCont{
+display: flex;
+  height: 45px;
+  width: 100%;
+}
+.headingReviews{
+  /* Text Desktop/H2 */
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.swiperItem{
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 391px;
+  height: 184px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.swiperText{
+  position: absolute;
+
+}
+.swiperRating{
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  padding: 4px 8px 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+                  45deg,
+                  rgb(180, 253, 100) 100%,
+                  #232326
+  );;
+  color: rgb(9, 9, 12);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.swiperName{
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.swiperDate{
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Text Desktop/B5 */
+  color: rgb(186, 186, 186);
+  font-family: TT Norms Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.swiperText{
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Text Desktop/B4 */
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}

@@ -1,0 +1,291 @@
+.promoBanner {
+  display: flex;
+  height: 370px;
+  width: 100%;
+  gap: 7px;
+  color: white;
+  flex-direction: row;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgb(13, 13, 16);
+  margin: 142px 30px 50px 30px;
+
+}
+.promo {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-family: Druk Wide Cy;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.promoCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 52px 52px;
+}
+.promoNav {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 37px;
+  align-items: center;
+}
+.promoInfo {
+  display: flex;
+  &.span {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.promoNavInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0px 32px;
+}
+.Btn {
+  width: 246px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px 12px 20px;
+  margin: 0px 0px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, rgb(242, 244, 82), rgb(180, 253, 100) 64%);
+  color: rgb(9, 9, 12);
+  font-family: TT Norms Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.promoDiscount {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 0px 32px;
+  padding-top: 53px;
+}
+.promoPrice {
+  color: rgb(186, 186, 186);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 24px;
+  width: 160px;
+  height: 20px;
+  left: 322px;
+  top: 283px;
+}
+.premieresImageCont {
+position: relative;
+width: 77px;
+height: 165px;
+}
+.premieresImage {
+  position: absolute;
+  left: 410px;
+  bottom: 57px;
+  width: 279px;
+  height: 165px;
+  border-radius: 5.36px;
+  clip: rect(57px, 290px, 290px, 0px);
+}
+.premieresImage1 {
+  position: absolute;
+  left: 700px;
+  bottom: 57px;
+  width: 279px;
+  border-radius: 5.36px;
+  clip: rect(57px, 290px, 290px, 0px);
+  height: 165px;
+}
+.premieresImage2 {
+  position: absolute;
+  left: 850px;
+  bottom: 57px;
+  width: 279px;
+  height: 165px;
+  border-radius: 5.36px;
+  clip: rect(57px, 279px, 270px, 150px);
+}
+.premieresImage3 {
+  position: absolute;
+  left: 250px;
+  top: 120px;
+  width: 279px;
+  border-radius: 5.36px;
+  height: 165px;
+}
+.premieresImage4 {
+  position: absolute;
+  left: 550px;
+  top: 120px;
+  width: 279px;
+  border-radius: 5.36px;
+  height: 165px;
+}
+.premieresImage5 {
+  position: absolute;
+  left: 850px;
+  top: 120px;
+  width: 279px;
+  border-radius: 5.36px;
+
+  height: 165px;
+}
+.premieresImage6 {
+  position: absolute;
+  left: 100px;
+  top: 300px;
+  width: 279px;
+  height: 165px;
+  border-radius: 5.36px;
+
+  clip: rect(0px, 290px, 68px, 0px);
+}
+.premieresImage7 {
+  position: absolute;
+  left: 400px;
+  top: 300px;
+  width: 279px;
+  border-radius: 5.36px;
+
+  height: 165px;
+  clip: rect(0px, 290px, 68px, 0px);
+}
+.premieresImage8 {
+  position: absolute;
+  left: 700px;
+  top: 300px;
+  width: 279px;
+  border-radius: 5.36px;
+
+  height: 165px;
+  clip: rect(0px, 290px, 68px, 0px);
+}
+.premieresImage9 {
+  position: absolute;
+  left: 1000px;
+  top: 300px;
+  width: 279px;
+  height: 165px;
+  border-radius: 5.36px;
+  clip: rect(0px, 290px, 68px, 0px);
+}
+
+
+@media (max-width: 375px){
+.promoBanner{
+  width: 343px;
+  height: 496px;
+  margin: 16px 0px 0px 16px;
+  flex-direction: column;
+}
+  .promo{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .promoInfo {
+    &.span {
+
+    }
+  }
+  .promoCont {
+    padding: 12px 12px 0px 14px;
+  }
+  .promoNav {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .promoDiscount{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+  }
+  .Btn{
+    display: flex;
+    width: 303px;
+    height: 44px;
+
+  }
+  .promoPrice{
+    padding-top:3px ;
+  }
+  .premieresImage{
+    left: -120px;
+    bottom: 50px;
+    width: 160px;
+    height: 94px;
+    border-radius: 5.36px;
+    clip: rect(0px, 400px, 100px, 120px);
+  }
+  .premieresImage1{
+    left: 50px;
+    bottom: 50px;
+    width: 160px;
+    height: 94px;
+    border-radius: 5.36px;
+    clip: rect(0px, 400px, 200px, 0px);
+  }
+  .premieresImage2{
+    left: 220px;
+    bottom: 50px;
+    width: 160px;
+    height: 94px;
+    border-radius: 5.36px;
+    clip: rect(0px, 121px, 200px, 0px);
+  }
+  .premieresImage3{
+    left: -30px;
+    bottom: 45px;
+    width: 160px;
+    height: 94px;
+    border-radius: 5.36px;
+    clip: rect(0px, 401px, 52px, 30px);
+  }
+  .premieresImage4{
+    left: 130px;
+    bottom: 45px;
+    width: 160px;
+    height: 94px;
+    border-radius: 5.36px;
+    clip: rect(0px, 401px, 52px, 10px);
+  }
+  .premieresImage5{
+    left: 290px;
+    bottom: 45px;
+    width: 160px;
+    height: 94px;
+    border-radius: 5.36px;
+    clip: rect(0px, 51px, 53px, 10px);
+  }
+  .premieresImage6{
+    display: none;
+  }
+  .premieresImage7{
+    display: none;
+  }
+  .premieresImage8{
+    display: none;
+  }
+  .premieresImage9{
+    display: none;
+  }
+}

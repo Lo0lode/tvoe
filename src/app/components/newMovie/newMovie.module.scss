@@ -1,0 +1,35 @@
+.newMovieCont{
+    margin-top: 55px;
+}
+
+.swiperCont{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 64px;
+}
+.newMovie{
+    color:white;
+    font-family: TT Norms Pro;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 100%;
+    letter-spacing: 0.1px;
+    margin-left: 4.5%;
+    margin-bottom: 19px;
+    display: flex;
+}
+.movieImage{
+border-radius: 10px;
+height: 425px;
+width: 280px;
+}
+@media (max-width: 375px){
+    .movieImage{
+        width: 168px;
+        height: 252px;
+    }
+    .swiperCont{
+        padding-left: 24px;
+    }
+
+}

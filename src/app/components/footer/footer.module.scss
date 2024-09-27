@@ -1,0 +1,120 @@
+.footer {
+  width: 1920px;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 64px 80px 64px;
+  margin-top: 152px;
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  line-height: 20px;
+}
+.footerBtnNetCont {
+  display: flex;
+  justify-content: space-between;
+}
+.footerBtn {
+  padding: 10px 16px 10px 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  gap: 8px;
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  background: #232326;
+  width: 203px;
+}
+.footerSocialNetCont {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  justify-items: center;
+  gap: 20px;
+  /* Button Desktop/16 */
+  color: rgba(255, 255, 255, 0.3);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footerSocialNet{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 6px;
+}
+.footerNavCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.footerNav{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+    /* Button Desktop/16 */
+    color: rgb(255, 255, 255);
+    font-family: TT Norms Pro;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.footerUserToolsCont {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
+  /* Button Desktop/16 */
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.footerCopyrightCont {
+    display: flex;
+    flex-direction: row;
+}
+.footerCopyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: TT Norms Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.footerClassification{
+width: 41px;
+height: 36px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+margin: 0px 20px;
+color: rgba(255, 255, 255, 0.3);
+font-family: TT Norms Pro;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+}
+.footerLogoCont {
+margin-left: 578px;
+}
+@media (max-width: 375px){
+
+}

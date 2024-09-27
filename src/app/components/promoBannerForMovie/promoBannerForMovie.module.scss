@@ -1,0 +1,55 @@
+.promoBanner {
+    display: flex;
+    height: 186px;
+    width: 1792px;
+    color: white;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgb(13, 13, 16);
+    margin: 142px 0px 50px 0px;
+  
+  }
+  .promo {
+    color: rgb(255, 255, 255);
+    font-family: Druk Wide Cy;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  .promoCont {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 108px 58px ;
+  }
+  .promoNav {
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    font-family: TT Norms Pro;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+  }
+  .promoInfo {
+    display: flex;
+    &.span {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .promoNavInfo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 121px;
+    padding-top: 35px;
+  }
+  .promoPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .price{
+    padding-left: 24px;
+  }

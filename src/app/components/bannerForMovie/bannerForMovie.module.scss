@@ -1,0 +1,175 @@
+.banner {
+  display: flex;
+  //   background-image: url(../../assets/images/banner.png);
+  background: linear-gradient(
+      90deg,
+      rgb(9, 9, 12) 21.094%,
+      rgba(9, 9, 12, 0) 50%
+    ),
+    linear-gradient(180deg, rgb(9, 9, 12), rgba(15, 15, 15, 0) 50%),
+    linear-gradient(180deg, rgba(9, 9, 12, 0) 50%, rgb(9, 9, 12) 92.094%),
+    url(../../assets/images/banner.png);
+  height: 652px;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: start;
+  flex-direction: column;
+  justify-content: end;
+  gap: 24px;
+  color: white;
+}
+.bannerNameCont {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding: 0px 64px;
+  width: 100%;
+}
+.bannerInfo {
+  display: flex;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+  font-family: TT Norms Pro;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 100%;
+  letter-spacing: 0.1px;
+  margin-left: 20px;
+}
+.bannerInfo > span:not(:first-child)::before {
+  height: 4px;
+  width: 4px;
+  background-color: #232326;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  content: "";
+}
+.rating {
+  width: 41px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.premiere {
+  width: 100px;
+  height: 36px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 10px 12px 0px;
+}
+.aboutMovieCont {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nameMovie {
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.aboutMovie {
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.Btn {
+  padding: 10px 16px 10px 16px;
+  border-radius: 12px;
+  display: flex;
+  width: 215px;
+  height: 52px;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  gap: 8px;
+  /* Button Desktop/16 */
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(
+    45deg,
+    rgb(242, 244, 82) 0%,
+    rgb(180, 253, 100) 64%
+  );
+  color: rgb(9, 9, 12);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(9, 9, 12);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  padding-left: 30px;
+}
+.toolsCont {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.heart {
+  width: 64px;
+  height: 52px;
+  padding: 12px 20px 12px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.share {
+  width: 64px;
+  height: 52px;
+  padding: 12px 20px 12px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.allMute {
+  width: 64px;
+  height: 52px;
+  padding: 12px 20px 12px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.fullScreen {
+  width: 64px;
+  height: 52px;
+  padding: 12px 20px 12px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.leftContTools {
+  display: flex;
+  gap:8px;
+}
+.rightContTools{
+  display: flex;
+  gap:8px;
+}
