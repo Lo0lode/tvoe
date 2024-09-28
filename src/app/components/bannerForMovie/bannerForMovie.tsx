@@ -1,13 +1,12 @@
 "use client";
 import avatarName from "@/app/assets/images/banner/avatarName.png";
-import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import styles from "./bannerForMovie.module.scss";
 import heart from "@/app/assets/images/bannerForMovie/heartForMovie.svg";
 import share from "@/app/assets/images/bannerForMovie/shareForMovie.svg";
 import allMute from "@/app/assets/images/bannerForMovie/allMuteForMovie.svg";
 import fullScreen from "@/app/assets/images/bannerForMovie/fullScreenForMovie.svg";
-import Image, {StaticImageData} from "next/image";
+import Image from "next/image";
 
 export default function Banner() {
     return (

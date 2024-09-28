@@ -10,7 +10,6 @@ import movie3 from "@/app/assets/images/banner/movie3.svg";
 import movie4 from "@/app/assets/images/banner/movie4.svg";
 import movie5 from "@/app/assets/images/banner/movie5.svg";
 import {useState, useEffect} from "react";
-import style from "@/app/components/weeklyTop/weeklyTop.module.scss";
 import Link from "next/link";
 
 interface Movies {
