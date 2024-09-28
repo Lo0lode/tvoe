@@ -90,15 +90,15 @@ export default function WeeklyTop() {
 
     return (
         <div className={style.new}>
-            <h2><span className={style.newStroke}>ТОП-10 НЕДЕЛИ</span></h2>
+            <span className={style.top10}>ТОП-10 НЕДЕЛИ</span>
             <Swiper className={style.newSwiper}
-                    spaceBetween={120}
+                    spaceBetween={20}
                     slidesPerView={mobileScreen}
             >
                 {movies.map((item) => <SwiperSlide
                     className={style.newSwiperSlide}
                     key={item.id}>
-                    <Link className={style.newSwiperSlideLink} href={`/movie/${item.id}`}>
+                    <Link className={style.newSwiperSlideLink} href={`/movie`}>
                         <div className={`${style.newSwiperRaiting} ${style.newStroke}`}>{item.rating}</div>
                         <div className={style.newSwiperImage}><Image src={item.image} alt="image"/></div>
                     </Link>

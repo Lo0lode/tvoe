@@ -1,5 +1,5 @@
 .header {
-  background-color: #171717;
+  background: rgb(9, 9, 12);
   width: 1920px;
   height: 76px;
   left: 0;
@@ -19,9 +19,9 @@
 
 .activeNav::after {
   background: linear-gradient(
-    45deg,
-    rgb(242, 244, 82) 0%,
-    rgb(180, 253, 100) 64%
+                  45deg,
+                  rgb(242, 244, 82) 0%,
+                  rgb(180, 253, 100) 64%
   );
   border-radius: 2px;
   bottom: -8px;
@@ -44,29 +44,35 @@
   align-items: center;
   gap: 12px;
 }
+
 .headerLogoNav {
   display: flex;
   gap: 80px;
   justify-content: center;
 }
+
 .headerNav {
   display: flex;
   gap: 28px;
   align-items: center;
+
   span {
     cursor: pointer;
   }
 }
+
 .headerNavRight {
   display: flex;
   gap: 8px;
 }
+
 .navRight {
   display: flex;
   gap: 8px;
   align-items: center;
   justify-items: center;
 }
+
 .Btn {
   padding: 10px 16px 10px 16px;
   border-radius: 12px;
@@ -82,11 +88,12 @@
   font-weight: 500;
   line-height: 20px;
   text-align: center;
+
   &.gradient {
     background: linear-gradient(
-      45deg,
-      rgb(242, 244, 82) 0%,
-      rgb(180, 253, 100) 64%
+                    45deg,
+                    rgb(242, 244, 82) 0%,
+                    rgb(180, 253, 100) 64%
     );
     color: rgb(9, 9, 12);
     font-family: TT Norms Pro;
@@ -96,6 +103,7 @@
     letter-spacing: 0%;
     text-align: center;
   }
+
   &.grey {
     background: #232326;
   }
@@ -103,32 +111,36 @@
 
 
 @media (max-width: 375px) {
-  .headerNav{
+  .headerNav {
     display: none;
   }
-  .header{
-    justify-content: start;
+  .header {
+    justify-content: space-between;
+    max-width: 375px;
     align-items: center;
     gap: 40px;
+    padding: 0 16px;
   }
-.installText{
-  display: none;
-}
-  .Btn{
+  .installText {
+    display: none;
+  }
+  .Btn {
     &.gradient {
       display: none;
     }
-    &.grey{
+
+    &.grey {
       background: #171717;
     }
-    }
-.promo{
-  display: none;
-}
-  .Btn{
-    padding:0 0px 0 10px;
   }
-  .searchText{
+  .promo {
+    display: none;
+  }
+  .Btn {
+    padding: 0;
+    gap:25px;
+  }
+  .searchText {
     /* Button/16_medium */
     color: rgb(186, 186, 186);
     font-family: TT Norms Pro;
@@ -137,5 +149,11 @@
     line-height: 20px;
     letter-spacing: 0%;
     text-align: center;
+  }
+  .headerNavRight {
+    gap: 25px;
+  }
+  .installImage{
+
   }
 }

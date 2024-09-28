@@ -10,6 +10,13 @@ import movie3 from "@/app/assets/images/banner/movie3.svg";
 import movie4 from "@/app/assets/images/banner/movie4.svg";
 import movie5 from "@/app/assets/images/banner/movie5.svg";
 import {useState, useEffect} from "react";
+import style from "@/app/components/weeklyTop/weeklyTop.module.scss";
+import Link from "next/link";
+
+interface Movies {
+    id: number;
+    image: StaticImageData;
+}
 
 export default function Banner() {
     const [mobileScreen, setMobileScreen] = useState(6);
@@ -28,10 +35,7 @@ export default function Banner() {
         handleResize();
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-    interface Movies {
-        id: number;
-        image: StaticImageData;
-    }
+
 
     const movies: Array<Movies> = [
         {id: 1, image: movie1},
@@ -68,11 +72,13 @@ export default function Banner() {
                 >
                     {movies.map((movie) => (
                         <SwiperSlide key={movie.id}>
-                            <Image className={styles.swiperImage}
-                                   src={movie.image}
-                                   alt="movie"
-                            />
-                            <div className=".next-button"></div>
+                            <Link href={`/movie`}>
+                                <Image className={styles.swiperImage}
+                                       src={movie.image}
+                                       alt="movie"
+                                />
+                                <div className=".next-button"></div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>

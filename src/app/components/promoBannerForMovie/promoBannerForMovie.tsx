@@ -12,18 +12,18 @@ const PromoBanner = () => {
     <>
       <div className={styles.promoBanner}>
         <div className={styles.promoCont}>
-          <div className={styles.promoPrice}>
-            <span className={styles.promo}>СМОТРИ МИРОВЫЕ ПРЕМЬЕРЫ</span>
-            <span className={styles.price}>далее от 166 ₽/месяц по подписке</span>
-          </div>
-        <div className={styles.promoNavInfo}>
-            <span className={`${styles.promoInfo} ${styles.span}`}> <Image src={promoImage1} alt="promoImage" style={{marginRight:"15px",}}/> Новинки каждую неделю</span>
+            <div className={styles.promoPrice}>
+                <span className={styles.promo}>СМОТРИ МИРОВЫЕ ПРЕМЬЕРЫ</span>
+                <span className={styles.promoMobile}>Попробуй 7 дней бесплатно</span>
+                <span className={styles.price}>далее от 166 ₽/месяц по подписке</span>
+            </div>
+            <div className={styles.promoNavInfo}>
+                <span className={`${styles.promoInfo} ${styles.span}`}> <Image src={promoImage1} alt="promoImage" style={{marginRight:"15px",}}/> Новинки каждую неделю</span>
             <span className={`${styles.promoInfo} ${styles.span}`}> <Image src={promoImage2} alt="promoImage" style={{marginRight:"15px"}}/> Ha любом устройстве</span>
             <span className={`${styles.promoInfo} ${styles.span}`}><Image src={promoImage3} alt="promoImage" style={{marginRight:"15px"}}/> Без рекламы и доплат</span>
             <span className={`${styles.promoInfo} ${styles.span}`}><Image src={promoImage4} alt="promoImage" style={{marginRight:"15px"}}/> Эксклюзивная озвучка </span>
           </div>
         </div>
-        
       </div>
     </>
   );

@@ -1,0 +1,95 @@
+.seasonalBlockCont {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 2400px;
+  height: 321px;
+}
+
+.seasonalBlock {
+  display: flex;
+  gap: 16px;
+
+  &.conteiner {
+    flex-direction: column;
+  }
+}
+
+.swiperItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiperTime {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 4px 8px 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background: rgba(9, 9, 12, 0.6);
+}
+
+.swiperProgressBar {
+  width: 80%;
+  height: 8px;
+  border-radius: 12px;
+  margin: 8px 0;
+  background: linear-gradient(
+                  45deg,
+                  rgb(180, 253, 100) 64%,
+                  #232326
+  );;
+
+}
+
+.activeNav::after {
+  background: linear-gradient(
+                  45deg,
+                  rgb(242, 244, 82) 0%,
+                  rgb(180, 253, 100) 64%
+  );
+  border-radius: 2px;
+  bottom: -8px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 10px;
+  width: 100%;
+}
+.seasonImage{
+width: 391px;
+  height: 220px;
+}
+.activeNav {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .seasonalBlockCont{
+    width: 343px;
+  }
+  .swiperTime{
+    bottom: 3px;
+    right: -65px;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background: rgba(9, 9, 12, 0.6);
+  }
+  .seasonImage{
+    width: 200px;
+    height: 128px;
+  }
+  .swiperProgressBar{
+    display: none;
+  }
+}

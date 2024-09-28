@@ -1,5 +1,4 @@
 .footer {
-  width: 1920px;
   height: 356px;
   display: flex;
   flex-direction: column;
@@ -12,10 +11,12 @@
   color: white;
   line-height: 20px;
 }
+
 .footerBtnNetCont {
   display: flex;
   justify-content: space-between;
 }
+
 .footerBtn {
   padding: 10px 16px 10px 16px;
   border-radius: 12px;
@@ -31,6 +32,7 @@
   background: #232326;
   width: 203px;
 }
+
 .footerSocialNetCont {
   display: flex;
   justify-content: end;
@@ -45,32 +47,37 @@
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
-}
-.footerSocialNet{
+  span{
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 6px;
+  }
 }
+
+
+
 .footerNavCont {
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
-.footerNav{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    gap: 20px;
-    /* Button Desktop/16 */
-    color: rgb(255, 255, 255);
-    font-family: TT Norms Pro;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: left;
+
+.footerNav {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
+  /* Button Desktop/16 */
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
+
 .footerUserToolsCont {
   display: flex;
   justify-content: end;
@@ -83,38 +90,141 @@
   font-weight: 500;
   line-height: 20px;
 }
+
 .footerCopyrightCont {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-.footerCopyright{
+
+.footerCopyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footerClassification {
+  width: 41px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  margin: 0px 20px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footerLogoCont {
+  margin-left: 578px;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.footerNavMobile {
+  display: none;
+}
+
+.footerBottomNav {
+  display: none;
+}
+
+@media (max-width: 375px) {
+
+  .footerBtnNetCont {
+    display: none;
+  }
+  .footerNavCont {
+    display: none;
+  }
+  .footerUserToolsCont {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .footer {
+    max-width: 375px;
+    height: auto;
+    padding: 28px 16px;
+    margin-top: 0;
+  }
+  .footerCopyrightCont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-top: 28px;
+  }
+  .footerCopyright {
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .footerNavMobile {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    color: rgba(255, 255, 255, 0.3);
-    font-family: TT Norms Pro;
+    justify-content: center;
+    gap: 16px;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-}
-.footerClassification{
-width: 41px;
-height: 36px;
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid rgba(255, 255, 255, 0.3);
-border-radius: 8px;
-margin: 0px 20px;
-color: rgba(255, 255, 255, 0.3);
-font-family: TT Norms Pro;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-}
-.footerLogoCont {
-margin-left: 578px;
-}
-@media (max-width: 375px){
+    align-items: center;
+  }
+  .promo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .socialNetMobile {
+    display: flex;
+    gap: 17px
+  }
+  .footerBottomNav {
+    display: flex;
+    gap: 40px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
+
+
+    div {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &.active::after {
+        background: linear-gradient(
+                        45deg,
+                        rgb(242, 244, 82) 0%,
+                        rgb(180, 253, 100) 64%
+        );
+        border-radius: 2px;
+        bottom: -8px;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        right: 10px;
+        width: 100%;
+      }
+    }
+  }
 }

@@ -17,7 +17,7 @@ const PromoBanner = () => {
         <div className={styles.promoCont}>
         <span className={styles.promo}>СМОТРИ МИРОВЫЕ ПРЕМЬЕРЫ</span>
         <div className={styles.promoNav}>
-          <div className={styles.promoNavInfo}>
+          <div className={`${styles.promoNavInfo} ${styles.test}`}>
             <span className={`${styles.promoInfo} ${styles.span}`}> <Image src={promoImage1} alt="promoImage" style={{marginRight:"15px",}}/> Новинки каждую неделю</span>
             <span className={`${styles.promoInfo} ${styles.span}`}> <Image src={promoImage2} alt="promoImage" style={{marginRight:"21px"}}/> Ha любом устройстве</span>
           </div>

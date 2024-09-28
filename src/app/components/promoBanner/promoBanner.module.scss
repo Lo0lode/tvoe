@@ -200,23 +200,38 @@ height: 165px;
     line-height: 24px;
   }
   .promoInfo {
-    &.span {
+    justify-content: center;
+    max-width: 2110px;
 
+    &.span {
     }
   }
   .promoCont {
     padding: 12px 12px 0px 14px;
   }
   .promoNav {
-    display: block;
+    display: flex;
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
+    padding-top: 24px;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
   }
+  .promoNavInfo{
+    gap:16px;
+    align-items: start;
+    justify-items: center;
+    justify-content: start;
+  }
+
   .promoDiscount{
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+    margin: 0;
 
   }
   .Btn{
@@ -226,7 +241,11 @@ height: 165px;
 
   }
   .promoPrice{
-    padding-top:3px ;
+    align-self: end;
+    padding-top: 8px;
+  }
+  .test{
+    padding-left: 8px;
   }
   .premieresImage{
     left: -120px;
@@ -254,27 +273,27 @@ height: 165px;
   }
   .premieresImage3{
     left: -30px;
-    bottom: 45px;
+    top: 110px;
     width: 160px;
     height: 94px;
     border-radius: 5.36px;
-    clip: rect(0px, 401px, 52px, 30px);
+    clip: rect(0px, 401px, 35px, 30px);
   }
   .premieresImage4{
     left: 130px;
-    bottom: 45px;
+    top: 110px;
     width: 160px;
     height: 94px;
     border-radius: 5.36px;
-    clip: rect(0px, 401px, 52px, 10px);
+    clip: rect(0px, 401px, 35px, 10px);
   }
   .premieresImage5{
     left: 290px;
-    bottom: 45px;
+    top: 110px;
     width: 160px;
     height: 94px;
     border-radius: 5.36px;
-    clip: rect(0px, 51px, 53px, 10px);
+    clip: rect(0px, 51px, 35px, 10px);
   }
   .premieresImage6{
     display: none;

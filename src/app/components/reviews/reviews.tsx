@@ -1,43 +1,60 @@
 "use client"
 import styles from "./reviews.module.scss"
 import {Swiper, SwiperSlide} from "swiper/react";
-import Image from "next/image";
+import {useEffect, useState} from "react";
 
+interface Review {
+    name: string;
+    date: string;
+    rating: number;
+    text: string;
+    id: number;
+}
 export default function Reviews(){
-    interface Review {
-        name: string;
-        date: string;
-        rating: number;
-        text: string;
-        id: number;
-    }
+
+    const [mobileScreen, setMobileScreen] = useState(6);
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+            console.log('Ширина экрана:', width);
+
+            if (width <= 375) {
+                setMobileScreen(7);
+            } else {
+                setMobileScreen(5);
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     const reviews: Review[] = [
         {
             name: "Иван",
             date: "15 Мая 2023",
             rating: 10,
-            text: "Отличный фильм! Мне очень понравился.",
+            text: "Отличный фильм!",
             id: 1,
         },
         {
             name: "Мария",
             date: "12 Марта 2023",
             rating: 8,
-            text: "Спасибо за очень приятный фильм!",
+            text: "Приятный фильм!",
             id: 2,
         },
         {
             name: "Петр",
             date: "10 Марта 2023",
             rating: 9,
-            text: "Необычный и интересный фильм.",
+            text: "Необычный фильм.",
             id: 3,
         },
         {
         name: "Олег",
             date: "08 Июня 2023",
             rating: 7,
-            text: "Я немного рассержусь на фильм, но он был хорош.",
+            text: "Пойдет",
             id: 4,
         },
         {
@@ -50,8 +67,8 @@ export default function Reviews(){
         {
         name: "Анна",
             date: "04 Июня 2023",
-            rating: 6,
-            text: "Слабый фильм, но очень хорошо смотрел.",
+            rating: 5,
+            text: "Слабый фильм.",
             id: 6,
         },
         {
@@ -72,7 +89,7 @@ export default function Reviews(){
             name: "Ирина",
             date: "30 Июля 2023",
             rating: 8,
-            text: "Хороший фильм, но плохо смотрел.",
+            text: "Хороший фильм.",
             id: 9,
         },]
 
@@ -83,8 +100,9 @@ export default function Reviews(){
             </div>
             <div className={styles.reviews}>
                 <Swiper
-                    slidesPerView={5}
-                    loop={false}
+                    slidesPerView={mobileScreen}
+                    spaceBetween={1}
+                    loop={true}
                     navigation={{
                         prevEl: ".prev-button",
                         nextEl: ".next-button",

@@ -10,7 +10,18 @@ import newMovie3 from "@/app/assets/images/newMovies/newMovie3.svg";
 import newMovie4 from "@/app/assets/images/newMovies/newMovie4.svg";
 import newMovie5 from "@/app/assets/images/newMovies/newMovie5.svg";
 import {useEffect, useState} from "react";
+import Link from "next/link";
 
+interface Movies {
+    id: number;
+    title: string;
+    year: string;
+    timing?: string;
+    newSeason?: string;
+    quantityOfSeason?: string
+    rating: string;
+    image: StaticImageData;
+}
 
 export default function NewMovie() {
 
@@ -22,23 +33,14 @@ export default function NewMovie() {
             if (width <= 375) {
                 setMobileScreen(2);
             } else {
-                setMobileScreen(7);
+                setMobileScreen(6);
             }
         };
         window.addEventListener('resize', handleResize);
         handleResize();
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-    interface Movies {
-        id: number;
-        title: string;
-        year: string;
-        timing?: string;
-        newSeason?: string;
-        quantityOfSeason?: string
-        rating: string;
-        image: StaticImageData;
-    }
+
 
     const movies: Array<Movies> = [
         {id: 1, image: newMovie0, title: "Муфаса: Король Лев", year: '2024,', timing: "2 ч 32 мин", rating: "9,9"},
@@ -89,11 +91,13 @@ export default function NewMovie() {
                     >
                         {movies.map((movie) => (
                             <SwiperSlide key={movie.id}>
-                                <Image
-                                    className={styles.movieImage}
-                                    src={movie.image}
-                                    alt="movie"
-                                />
+                                <Link href={`/movie`}>
+                                    <Image
+                                        className={styles.movieImage}
+                                        src={movie.image}
+                                        alt="movie"
+                                    />
+                                </Link>
                             </SwiperSlide>
                         ))}
                     </Swiper>
