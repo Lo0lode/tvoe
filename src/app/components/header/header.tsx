@@ -6,6 +6,8 @@ import textLogo from "@/app/assets/images/logosForHeader/textLogo.svg"
 import installSvg from "@/app/assets/images/logosForHeader/install.svg"
 import lupa from "@/app/assets/images/logosForHeader/lupa.svg"
 import promo from "@/app/assets/images/logosForHeader/promo.svg"
+import download from "@/app/assets/images/logosForHeader/download.svg"
+
 import { useState } from "react";
 
 export default function Header() {
@@ -27,7 +29,8 @@ export default function Header() {
 
       <div className={styles.headerNavRight}>
         <div className={`${styles.Btn} ${styles.grey}`}>
-          <Image src={installSvg} alt="install" className={styles.installImage} />
+            <Image src={installSvg} alt="install" className={styles.installImage} />
+            <Image src={download} alt="install" className={styles.installImageMobile} />
             <span className={styles.installText}>Установить</span>
         </div>
         <div className={`${styles.Btn} ${styles.gradient}`}>

@@ -127,13 +127,13 @@ export default function SeasonBlock() {
                     id: uuidv4(),
                     title: "Серия 1",
                     time: "20:24",
-                    image: episodes1,
+                    image: episodes2,
                 },
                 {
                     id: uuidv4(),
                     title: "Серия 2",
                     time: "20:24",
-                    image: episodes2,
+                    image: episodes1,
                 },
                 {
                     id: uuidv4(),
@@ -192,7 +192,7 @@ export default function SeasonBlock() {
                     id: uuidv4(),
                     title: "Серия 1",
                     time: "20:24",
-                    image: episodes1,
+                    image: episodes3,
                 },
                 {
                     id: uuidv4(),
@@ -204,7 +204,7 @@ export default function SeasonBlock() {
                     id: uuidv4(),
                     title: "Серия 3",
                     time: "20:24",
-                    image: episodes3,
+                    image: episodes1,
                 },
                 {
                     id: uuidv4(),
@@ -283,8 +283,9 @@ export default function SeasonBlock() {
                                         <span className={styles.swiperTime}>{episodes.time}</span>
                                     </div>
                                     <div>
+                                        <h3 className={styles.Swipertitle}>{episodes.title}</h3>
                                         <div className={`${episodes.watched && styles.swiperProgressBar}`}></div>
-                                        <h3>{episodes.title}</h3>
+
                                     </div>
                                 </SwiperSlide>
                             )

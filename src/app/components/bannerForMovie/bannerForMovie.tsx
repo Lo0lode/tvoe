@@ -6,14 +6,28 @@ import heart from "@/app/assets/images/bannerForMovie/heartForMovie.svg";
 import share from "@/app/assets/images/bannerForMovie/shareForMovie.svg";
 import allMute from "@/app/assets/images/bannerForMovie/allMuteForMovie.svg";
 import fullScreen from "@/app/assets/images/bannerForMovie/fullScreenForMovie.svg";
+import backBtn from "@/app/assets/images/bannerForMovie/backBtn.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Banner() {
     return (
         <div className={styles.bannerCont}>
             <div className={styles.banner}>
+                <Link href={`/`}>
+                    <div className={styles.backBtnCont}>
+                        <Image src={backBtn} alt="backBtn" className={styles.backBtnImg}/>
+                        <button className={styles.backBtn}> Назад</button>
+                    </div>
+                </Link>
                 <div className={styles.bannerNameCont}>
-                    <Image height={100} width={340} src={avatarName} alt="AvatarName" className={styles.avatarName}/>
+                <Image height={100} width={340} src={avatarName} alt="AvatarName" className={styles.avatarName}/>
+                    <div className={styles.bannerInfoMobile}>
+                        <span className={styles.rating}>7,9</span>
+                        <span>2024</span>
+                        <span>1 сезон</span>
+                        <span>Фентези</span>
+                    </div>
                     <div className={styles.bannerInfo}>
                         <span className={styles.rating}>7,9</span>
                         <span className={styles.premiere}>Премьера</span>

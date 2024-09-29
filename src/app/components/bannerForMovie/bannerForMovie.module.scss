@@ -18,7 +18,38 @@
   gap: 24px;
   color: white;
 }
-
+.backBtnCont{
+  display: flex;
+  position: relative;
+}
+.backBtn{
+  position: absolute;
+  cursor: pointer;
+  top: -200px;
+  left: 60px;
+  background: rgb(9, 9, 12);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  z-index: 0;
+}
+.backBtnImg{
+  position: absolute;
+  top: -184px;
+  left: 68px;
+  z-index: 1;
+}
 .bannerNameCont {
   display: flex;
   gap: 16px;
@@ -63,7 +94,7 @@
 }
 
 .premiere {
-  width: 100px;
+  width: 110px;
   height: 36px;
   display: flex;
   justify-content: start;
@@ -73,7 +104,9 @@
   border-radius: 8px;
   padding: 10px 10px 12px 0px;
 }
-
+.bannerInfoMobile{
+  display: none;
+}
 .aboutMovieCont {
   display: flex;
   flex-direction: column;
@@ -126,15 +159,6 @@
                   rgb(180, 253, 100) 64%
   );
   color: rgb(9, 9, 12);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-align: center;
-  color: rgb(9, 9, 12);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 23px;
   padding-left: 30px;
 }
 
@@ -296,10 +320,20 @@
     padding: 12px 20px 12px 20px;
   }
   .bannerInfo {
+    display: none;
+  }
+  .bannerInfoMobile{
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    gap: 12px;
+    color: rgb(255, 255, 255);
+    font-family: TT Norms Pro;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
   }
   .avatarName {
     height: 54px;
@@ -333,7 +367,41 @@
     margin-bottom: 0px;
     content: "";
   }
+  .bannerInfoMobile > span:not(:first-child)::before {
+    height: 4px;
+    width: 4px;
+    background-color: #232326;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 2px;
+    content: "";
+  }
   .bannerMobile{
     display: inline;
+  }
+  .backBtn{
+    position: absolute;
+    cursor: pointer;
+    top: -220px;
+    left: 35px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0); /* Цвет текста будет зависеть от фона */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: TT Norms Pro;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    z-index: 0;
+    color: white;
+  }
+  .backBtnImg{
+    top: -204px;
+    left: 45px
   }
 }

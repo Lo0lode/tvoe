@@ -179,7 +179,7 @@
     gap: 5px;
     align-items: center;
     justify-items: center;
-    padding-top: 66px;
+    padding-top: 80px;
     color: rgb(99, 99, 101);
     font-family: TT Norms Pro;
     font-size: 16px;
@@ -218,7 +218,7 @@
     height: 218px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
-    margin-top: 150px;
+    margin-top: 170px;
   }
   .ratingMobile{
     width: 100%;
@@ -249,13 +249,15 @@
     padding: 10px 15px 0px 15px;
   }
   .questionMobile{
-    color: rgb(99, 99, 101);
+    /* Text Mobile/h2 */
+    color: rgb(255, 255, 255);
     font-family: TT Norms Pro;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0%;
+    line-height: 26px;
+    letter-spacing: 0px;
     text-align: left;
+    color: white;
   }
   .recommendationsMobile{
     color: rgb(186, 186, 186);

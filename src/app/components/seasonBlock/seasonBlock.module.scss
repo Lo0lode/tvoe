@@ -24,7 +24,7 @@
 .swiperTime {
   position: absolute;
   bottom: 12px;
-  right: 20px;
+  right: -50px;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
@@ -36,6 +36,8 @@
 }
 
 .swiperProgressBar {
+  position: absolute;
+  bottom: 10px;
   width: 80%;
   height: 8px;
   border-radius: 12px;
@@ -71,6 +73,15 @@ width: 391px;
   position: relative;
   display: inline-block;
   cursor: pointer;
+}
+.Swipertitle{
+  color: rgb(255, 255, 255);
+  font-family: TT Norms Pro;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 @media (max-width: 375px) {
   .seasonalBlockCont{
